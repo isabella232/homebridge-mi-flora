@@ -124,6 +124,8 @@ function MiFlowerCarePlugin(log, config) {
         }
     });
 
+    this.flora.startScanning();
+
     setInterval(function () {
         // Start scanning for updates, these will arrive in the corresponding callbacks
         that.flora.startScanning();
